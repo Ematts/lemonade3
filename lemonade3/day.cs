@@ -66,7 +66,7 @@ namespace LemonAidStand
 
             double priceDemand = player.getGlassPrice();
             totalDemand = weather.weatherDemand / priceDemand;
-            Console.WriteLine("total demand = " + totalDemand);
+            //Console.WriteLine("total demand = " + totalDemand);
             return totalDemand;
 
 
