@@ -39,6 +39,11 @@ namespace LemonAidStand
                 getGlassPrice();
 
             }
+            if (glassPrice < 0)
+            {
+                Console.WriteLine("That is not a valid option in this menu.");
+                getGlassPrice();
+            }
 
             return glassPrice;
 

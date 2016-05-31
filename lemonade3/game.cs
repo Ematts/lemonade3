@@ -36,6 +36,11 @@ namespace LemonAidStand
                 Console.WriteLine("That is not a valid option in this menu.");
                 startMenu();
             }
+            if (dayChoice <= 0)
+            {
+                Console.WriteLine("That is not a valid option in this menu.");
+                startMenu();
+            }
             return dayChoice;
 
 

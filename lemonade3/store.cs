@@ -93,6 +93,11 @@ namespace LemonAidStand
                 Console.WriteLine("That is not a valid option in this menu.");
                 getLemons(player, game);
             }
+            if (lemonsInCart < 0)
+            {
+                Console.WriteLine("That is not a valid option in this menu.");
+                getLemons(player, game);
+            }
 
             lemonCalc(player, lemonsInCart, game);
             return lemonsInCart;
@@ -111,6 +116,11 @@ namespace LemonAidStand
                 iceInCart = int.Parse(Console.ReadLine());
             }
             catch (FormatException)
+            {
+                Console.WriteLine("That is not a valid option in this menu.");
+                getIce(player, game);
+            }
+            if (iceInCart < 0)
             {
                 Console.WriteLine("That is not a valid option in this menu.");
                 getIce(player, game);
@@ -134,6 +144,11 @@ namespace LemonAidStand
                 Console.WriteLine("That is not a valid option in this menu.");
                 getSugar(player, game);
             }
+            if (sugarInCart < 0)
+            {
+                Console.WriteLine("That is not a valid option in this menu.");
+                getSugar(player, game);
+            }
 
             sugarCalc(player, sugarInCart, game);
             return sugarInCart;
@@ -150,6 +165,11 @@ namespace LemonAidStand
                 cupsInCart = int.Parse(Console.ReadLine());
             }
             catch (FormatException)
+            {
+                Console.WriteLine("That is not a valid option in this menu.");
+                getCups(player, game);
+            }
+            if (cupsInCart < 0)
             {
                 Console.WriteLine("That is not a valid option in this menu.");
                 getCups(player, game);
